@@ -8,7 +8,7 @@ API ENDPOINT: method: GET , endpoint: /me , description: returns user details.
   "status": "success",
   "user": {
     "email": "youremail@example.com",
-    "name": "Your Full Name",
+    "name": "Your full name",
     "stack": "Python/Flask"
   },
   "timestamp": "2025-10-09T13:45:12.001Z",
