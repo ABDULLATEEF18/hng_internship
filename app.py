@@ -8,9 +8,18 @@ import os
 
 app = Flask(__name__)
 
+# a route for my homepage
+@app.route('/')
+def home():
+    return jsonify({
+        "message": "Welcome to Atanda Abdullateef's Flask API 🚀",
+        "endpoints": ["/me"],
+        "status": "running"
+    }), 200
+
 
 @app.route('/me', methods=['GET'])
-def my_profilr():
+def my_profile():
     
       # get the current time
       current_time = datetime.now(timezone.utc).isoformat()
