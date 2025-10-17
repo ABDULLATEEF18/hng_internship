@@ -2,7 +2,7 @@ from flask import Flask, jsonify
 
 import requests
 
-from datetime import datetime, tzinfo, timezone
+from datetime import datetime,  timezone
 
 app = Flask(__name__)
 
@@ -37,7 +37,7 @@ def my_profilr():
         "fact": cat_fact
         }
       
-      return jsonify(my_data), 2
+      return jsonify(my_data), 200
 if __name__ == "__main__":
     from flask import Flask
     import os
